@@ -84,21 +84,22 @@ $icon-font-path: '../fonts/';
         background-color: $main-color-6;
         color: #fff;
         text-shadow: 1px 1px 2px #797979;
-        & .container {
-            padding-top: 20px;
-            background-image: url('/images/landing.png');
+         background-image: url('/images/landing.png');
             background-repeat: no-repeat;
-            height: 316px;
+            height: 550px;
+            width: 1270px;
             background-size: contain;
-            & .logo {
+             & .logo {
                 background: url('/images/logo.png') no-repeat;
                 background-size: contain;
-                height: 68px;
-                width: 125px;
+                height: 90px;
+                width: 170px;
             }
-            & .jumbotron {
-                padding: 97px 381px 0 0;
-            }            
+             & .jumbotron {
+                padding: 300px 650px 0 0;
+            }  
+        & .container {
+            padding-top: 20px;
         }        
     }
 
@@ -114,11 +115,11 @@ $icon-font-path: '../fonts/';
         }
     }
     & .services-section {
-        background-color: $main-color-3;
+        background-color: $main-color-7;
         @include sec-width;
     }
     & .why-section {
-       background-color: $main-color-5;
+       background-color: $main-color-6;
        @include sec-width;
     }
     & .customers-section {
