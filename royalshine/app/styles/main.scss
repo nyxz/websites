@@ -3,6 +3,7 @@ $icon-font-path: '../fonts/';
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
+@import "app/styles/config.scss";
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -11,15 +12,8 @@ $icon-font-path: '../fonts/';
   padding: 0.2em 0;
 }
 
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
-.marketing,
 .footer {
   padding-left: 15px;
   padding-right: 15px;
@@ -45,10 +39,6 @@ body {
   border-top: 1px solid #e5e5e5;
 }
 
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
@@ -59,13 +49,6 @@ body {
   }
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
-  }
-}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -75,7 +58,6 @@ body {
 
   /* Remove the padding we set earlier */
   .header,
-  .marketing,
   .footer {
     padding-left: 0;
     padding-right: 0;
@@ -90,4 +72,30 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+.royal-shine {
+    & .landing-section {
+        background-color: $main-color-2;
+        & .container {
+            padding-top: 20px;
+            background-image: url('/images/landing.png');
+            background-repeat: no-repeat;
+            height: 239px;
+            background-size: contain;
+        }        
+    }
+
+    & .rules-section {
+        background-color: $main-color-4;
+    }
+    & .services-section {
+        background-color: $main-color-3;
+    }
+    & .why-section {
+       background-color: $main-color-5;
+    }
+    & .customers-section {
+       background-color: $main-color-2;
+    }
 }
