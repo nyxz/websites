@@ -41,6 +41,7 @@ $icon-font-path: '../fonts/';
 
 /* Main marketing message and sign up button */
 .jumbotron {
+  background: none;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
   .btn {
@@ -74,26 +75,51 @@ $icon-font-path: '../fonts/';
   }
 }
 
+@mixin sec-width {
+    height: 360px;
+}
+
 .royal-shine {
     & .landing-section {
-        background-color: $main-color-2;
+        background-color: $main-color-6;
+        color: #fff;
+        text-shadow: 1px 1px 2px #797979;
         & .container {
             padding-top: 20px;
             background-image: url('/images/landing.png');
             background-repeat: no-repeat;
-            height: 239px;
+            height: 316px;
             background-size: contain;
+            & .logo {
+                background: url('/images/logo.png') no-repeat;
+                background-size: contain;
+                height: 68px;
+                width: 125px;
+            }
+            & .jumbotron {
+                padding: 97px 381px 0 0;
+            }            
         }        
     }
 
     & .rules-section {
-        background-color: $main-color-4;
+        background-color: $main-color-5;
+        @include sec-width;
+        & .container {
+        & .test {
+            width: 70px;
+            height: 70px;
+            background-color: #fff;
+            }
+        }
     }
     & .services-section {
         background-color: $main-color-3;
+        @include sec-width;
     }
     & .why-section {
        background-color: $main-color-5;
+       @include sec-width;
     }
     & .customers-section {
        background-color: $main-color-2;
