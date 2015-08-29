@@ -14,3 +14,6 @@ This project was created taking the following steps:
 1. `yo gulp-webapp`
 1. Select the add-on packages - I selected SASS, Bootstrap and Modernizr
 
+### Installation
+
+`npm install & bower install`
