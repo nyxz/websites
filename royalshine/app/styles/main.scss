@@ -6,72 +6,72 @@ $icon-font-path: '../fonts/';
 @import "app/styles/config.scss";
 
 .browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .footer {
-  padding-left: 15px;
-  padding-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
+    /* Make the masthead heading the same height as the navigation */
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 40px;
+        padding-bottom: 19px;
   }
 }
 
 /* Custom page footer */
 .footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
 }
 
 /* Main marketing message and sign up button */
 .jumbotron {
-  background: none;
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
+    background: none;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    .btn {
+        font-size: 21px;
+        padding: 14px 24px;
   }
 }
 
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
+    .container {
+        max-width: 730px;
   }
 
   /* Remove the padding we set earlier */
   .header,
   .footer {
-    padding-left: 0;
-    padding-right: 0;
+      padding-left: 0;
+      padding-right: 0;
   }
 
   /* Space out the masthead */
   .header {
-    margin-bottom: 30px;
+      margin-bottom: 30px;
   }
 
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
-    border-bottom: 0;
+      border-bottom: 0;
   }
 }
 
@@ -81,36 +81,38 @@ $icon-font-path: '../fonts/';
 
 .royal-shine {
     & .landing-section {
-        background-color: $main-color-6;
-        color: #fff;
-        text-shadow: 1px 1px 2px #797979;
-         background-image: url('/images/landing.png');
-            background-repeat: no-repeat;
-            height: 550px;
-            width: 1270px;
+        height: 550px;
+        color: $light;
+        text-shadow: 1px 1px 2px $text-shadow;
+
+        background-image: url('/images/landing.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: $light;
+        background-position: center;
+
+        & .logo {
+            background: url('/images/logo.png') no-repeat;
             background-size: contain;
-             & .logo {
-                background: url('/images/logo.png') no-repeat;
-                background-size: contain;
-                height: 90px;
-                width: 170px;
-            }
-             & .jumbotron {
-                padding: 300px 650px 0 0;
-            }  
+            height: 90px;
+            width: 170px;
+        }
         & .container {
             padding-top: 20px;
-        }        
+            & .jumbotron {
+                padding: 200px 450px 0 0;
+            }
+        }
     }
 
     & .rules-section {
         background-color: $main-color-5;
         @include sec-width;
         & .container {
-        & .test {
-            width: 70px;
-            height: 70px;
-            background-color: #fff;
+            & .test {
+                width: 70px;
+                height: 70px;
+                background-color: #fff;
             }
         }
     }
@@ -119,10 +121,10 @@ $icon-font-path: '../fonts/';
         @include sec-width;
     }
     & .why-section {
-       background-color: $main-color-6;
-       @include sec-width;
+        background-color: $light;
+        @include sec-width;
     }
     & .customers-section {
-       background-color: $main-color-2;
+        background-color: $main-color-2;
     }
 }
