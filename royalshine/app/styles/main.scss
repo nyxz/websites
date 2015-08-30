@@ -105,14 +105,14 @@ $icon-font-path: '../fonts/';
         color: $light;
         text-shadow: 2px 2px 2px $text-shadow;
 
-        background-image: url('/images/landing.png');
+        background-image: url('../images/landing.png');
         background-repeat: no-repeat;
         background-size: contain;
         background-color: $light;
         background-position: center;
 
         & .logo {
-            background: url('/images/logo.png') no-repeat;
+            background: url('../images/logo.png') no-repeat;
             background-size: contain;
             height: 90px;
             width: 170px;
@@ -183,7 +183,7 @@ $icon-font-path: '../fonts/';
     }
     & .why-section {
         background-color: $main-color-7;
-        background-image: url('/images/woman-with-mop.png');
+        background-image: url('../images/woman-with-mop.png');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: 30%;
@@ -235,13 +235,13 @@ $icon-font-path: '../fonts/';
                     }
                 }
                 &.box-home {
-                    background-image: url("/images/bucket.jpg");
+                    background-image: url("../images/bucket.jpg");
                 }
                 &.box-office {
-                    background-image: url("/images/gloves.jpg");
+                    background-image: url("../images/gloves.jpg");
                 }
                 &.box-one-off {
-                    background-image: url("/images/vacuumcleaner.jpg");
+                    background-image: url("../images/vacuumcleaner.jpg");
                 }
             }
             & .box-info {
