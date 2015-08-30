@@ -85,6 +85,21 @@ $icon-font-path: '../fonts/';
 }
 
 .royal-shine {
+
+    & .icon-wrapper {
+        border: 4px solid $light;
+        display: inline-block;
+        width: 9.35em;
+        height: 9.35em;
+        line-height: 1.35em;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        i {
+            text-align: center;
+        }
+    }
+
     & .landing-section {
         height: 550px;
         color: $light;
@@ -113,20 +128,26 @@ $icon-font-path: '../fonts/';
                     margin-top: 150px;
                     text-align: left;
                     & .btn {
-                        &.btn-primary {
+                        &.btn-book {
                             background: $btn-primary;
                             border: 1px solid $btn-primary;
-                            &:hover {
+                            &:hover, &:focus, &:active {
+                                color: $light;
                                 background: darken($btn-primary, 10%);
                                 border: 1px solid darken($btn-primary, 10%);
+                                border-color: $btn-primary;
+                                outline-color: lighten($btn-primary, 10%);
                             }
                         }
-                        &.btn-info {
+                        &.btn-services {
                             background: $btn-secondary;
                             border: 1px solid $btn-secondary;
-                            &:hover {
+                            &:hover, &:focus, &:active {
+                                color: $light;
                                 background: darken($btn-secondary, 10%);
                                 border: 1px solid darken($btn-secondary, 10%);
+                                border-color: $btn-secondary;
+                                outline-color: lighten($btn-secondary, 10%);
                             }
                         }
                     }
@@ -143,24 +164,17 @@ $icon-font-path: '../fonts/';
         & .container {
             & .royalshine-info {
                 text-align: center;
-                & .icon-wrapper {
-                    border: 4px solid $btn-secondary;
-                    display: inline-block;
-                    width: 9.35em;
-                    height: 9.35em;
-                    line-height: 1.35em;
-                    -moz-border-radius: 50%;
-                    -webkit-border-radius: 50%;
-                    border-radius: 50%;
-                    
-                    i {
-                        font-size: 50pt;
-                        color: $btn-secondary;
-                    }
-                }
                 & .royalshine-info-text {
                     font-size: 11pt;
                     margin: 25px 0;
+                }
+            }
+            
+            & .icon-wrapper {
+                border: 4px solid $btn-secondary;
+                i {
+                    font-size: 50pt;
+                    color: $btn-secondary;
                 }
             }
         }
@@ -196,7 +210,35 @@ $icon-font-path: '../fonts/';
     }
     & .services-section {
         background-color: $light;
-        @include sec-width;
+        min-height: 400px;
+        
+        & .container {
+            padding-top: 40px;
+            & .royalshine-service-box {
+                text-align: center;
+                height: 300px;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 10px;
+                color: $light;
+                & .icon-wrapper {
+                    margin: 0 auto;
+                    border: none;
+                    i {
+                        font-size: 50pt;
+                    }
+                }
+                &.box-home {
+                    background-image: url("/images/bucket.jpg");
+                }
+                &.box-office {
+                    background-image: url("/images/gloves.jpg");
+                }
+                &.box-one-off {
+                    background-image: url("/images/vacuumcleaner.jpg");
+                }
+            }
+        }
     }
     & .customers-section {
         background-color: $main-color-2;
