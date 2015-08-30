@@ -178,9 +178,6 @@ $icon-font-path: '../fonts/';
     }
     & .why-section {
         background-color: $main-color-7;
-        background-image: url('../images/woman-with-mop.png');
-        background-size: contain;
-        background-repeat: no-repeat;
         background-position: 30%;
         min-height: 400px;
         color: $light;
@@ -201,6 +198,9 @@ $icon-font-path: '../fonts/';
                     }
                 }
                 list-style-type: none;
+            }
+            & .why-us-icon {
+                font-size: 250px;
             }
         }
 
