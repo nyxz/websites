@@ -33,8 +33,8 @@
                     <h1>Let your place shine</h1>
                     <p>Cleaning Services</p>
                     <div class="landing-buttons">
-                        <button class="btn btn-book">Book</button>
-                        <button class="btn btn-services">All Services</button>
+                        <button class="btn btn-book">Prices</button>
+                        <a href="#services" class="btn btn-services">All Services</a>
                     </div>
                 </div>
             </div>
@@ -91,33 +91,94 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid services-section">
+        <div id="services" class="container-fluid services-section">
             <div class="container">
+                <div class="jumbotron">
+                    <h1>Services</h1>
+                </div>
                 <div class="row">
-                    <div class="col-md-offset-1 col-md-3 royalshine-service-box box-home">
-                        <div class="icon-wrapper">
-                            <i class="flaticon-dishwashing vertically-center"></i>
+                    <div class="col-md-offset-1 col-md-3">
+                        <div class="royalshine-service-box box-home">
+                            <div class="icon-wrapper">
+                                <i class="flaticon-dishwashing vertically-center"></i>
+                            </div>
+                            <h2>Home Cleaning</h2>
                         </div>
-                        <h2>Home Cleaning</h2>
+                        <div class="box-info">
+                            <h3>All rooms</h3>
+                            <ul>
+                                <li>Dusting (Furniture, skirting, door frame, window sills)</li>
+                                <li>Vacuum & mop</li>
+                                <li>Windows (inside)</li>
+                                <li>Mirror and glass</li>
+                                <li>Ironing</li>
+                                <li>Empty rubbish bins</li>
+                                <li>Make beds / change linens</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-md-offset-1 col-md-3 royalshine-service-box box-office">
-                        <div class="icon-wrapper">
-                            <i class="flaticon-clean3 vertically-center"></i>
+                    <div class="col-md-offset-1 col-md-3">
+                        <div class="royalshine-service-box box-office">
+                            <div class="icon-wrapper">
+                                <i class="flaticon-clean3 vertically-center"></i>
+                            </div>
+                            <h2>Office Cleaning</h2>
                         </div>
-                        <h2>Office Cleaning</h2>
                     </div>
-                    <div class="col-md-offset-1 col-md-3 royalshine-service-box box-one-off">
-                        <div class="icon-wrapper">
-                            <i class="flaticon-dishwashing1 vertically-center"></i>
+                    <div class="col-md-offset-1 col-md-3">
+                        <div class="royalshine-service-box box-one-off">
+                            <div class="icon-wrapper">
+                                <i class="flaticon-dishwashing1 vertically-center"></i>
+                            </div>
+                             <h2>One-Off</h2>
                         </div>
-                        <h2>One-Off</h2>
+                        <div class="box-info">
+                            <h3>Types</h3>
+                            <ul>
+                                <li>After building cleaning </li>
+                                <li>After party cleaning </li>
+                                <li>Spring cleaning</li>
+                                <li>End of tenancy </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="container-fluid customers-section">
             <div class="container">
-                <div class="jumbotron">
+                <div id="myCarousel" class="carousel slide royalshine-carousel" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active royalshine-carousel-item">
+                            <div class="carousel-caption royalshine-carousel-caption">
+                                <h3>Chania</h3>
+                                <p><img src="/images/woman.jpg" />The atmosphere in Chania has a touch of Florence and Venice.</p>
+                            </div>
+                        </div>
+
+                        <div class="item royalshine-carousel-item">
+                            <div class="carousel-caption royalshine-carousel-caption">
+                                <h3>Chania</h3>
+                                <p><img src="/images/old-woman.jpg" />The atmosphere in Chania has a touch of Florence and Venice.</p>
+                            </div>
+                        </div>
+                    
+                        <div class="item royalshine-carousel-item">
+                            <div class="carousel-caption royalshine-carousel-caption">
+                                <h3>Flowers</h3>
+                                <p><img src="/images/man.jpg" />Beatiful flowers in Kolymbari, Crete.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

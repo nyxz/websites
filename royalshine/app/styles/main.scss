@@ -128,6 +128,8 @@ $icon-font-path: '../fonts/';
                     margin-top: 150px;
                     text-align: left;
                     & .btn {
+                        color: $light;
+                        text-shadow: none;
                         &.btn-book {
                             background: $btn-primary;
                             border: 1px solid $btn-primary;
@@ -211,9 +213,12 @@ $icon-font-path: '../fonts/';
     & .services-section {
         background-color: $light;
         min-height: 400px;
-        
+
         & .container {
-            padding-top: 40px;
+            margin-bottom: 60px;
+            & .jumbotron {
+                color: $dark;
+            }
             & .royalshine-service-box {
                 text-align: center;
                 height: 300px;
@@ -221,6 +226,7 @@ $icon-font-path: '../fonts/';
                 background-repeat: no-repeat;
                 border-radius: 10px;
                 color: $light;
+                text-transform: uppercase;
                 & .icon-wrapper {
                     margin: 0 auto;
                     border: none;
@@ -238,9 +244,43 @@ $icon-font-path: '../fonts/';
                     background-image: url("/images/vacuumcleaner.jpg");
                 }
             }
+            & .box-info {
+                color: $dark;
+            }
         }
     }
     & .customers-section {
-        background-color: $main-color-2;
+        background-color: $main-color-5;
+        color: $dark;
+        & .container {
+            & .royalshine-carousel {
+                min-height: 300px;
+                & .carousel-indicators {
+                    li {
+                        background: $light;
+                        border-color: $dark;
+                        &.active {
+                            background: $btn-secondary;
+                            border-color: $btn-secondary;
+                        }
+                    }
+                }
+                & .royalshine-carousel-item {
+                    min-height: 250px;
+                    & .royalshine-carousel-caption {
+                        width: 600px;
+                        color: $dark;
+                        text-shadow: none;
+
+                        img {
+                            border-radius: 50%;
+                            width: 100px;
+                            height: 90px;
+                            margin-right: 50px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
