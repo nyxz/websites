@@ -30,7 +30,7 @@ $icon-font-path: '../fonts/';
         margin-bottom: 0;
         line-height: 40px;
         padding-bottom: 19px;
-  }
+    }
 }
 
 
@@ -243,6 +243,9 @@ $icon-font-path: '../fonts/';
                 }
             }
             & .box-info {
+                ul {
+                    list-style-type: none;
+                }
                 color: $dark;
             }
         }
@@ -282,12 +285,15 @@ $icon-font-path: '../fonts/';
         }
     }
     & .footer-section {
-        background-color: $btn-secondary;
+        background-color: darken($dark, 35%);
         color: $light;
-        min-height: 250px;
+        min-height: 70px;
         & .container {
-            & .footer {
-                padding-top: 19px;
+            padding-top: 20px;
+            & .royalshine-footer {
+                a {
+                    color: $light;
+                }
             }
         }
     }
