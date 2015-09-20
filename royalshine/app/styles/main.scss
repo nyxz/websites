@@ -243,6 +243,9 @@ $icon-font-path: '../fonts/';
             }
             & .box-info {
                 color: $dark;
+                p {
+                    text-align: center;
+                }
             }
         }
     }
