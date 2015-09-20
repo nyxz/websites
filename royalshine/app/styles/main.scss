@@ -270,12 +270,20 @@ $icon-font-path: '../fonts/';
                     & .royalshine-carousel-caption {
                         color: $dark;
                         text-shadow: none;
+                        font-size: 16pt;
 
                         img {
-                            border-radius: 50%;
+                            border-radius: 5px;
                             width: 100px;
                             height: 90px;
                             margin: 0px 20px;
+                        }
+
+                        & .speach-author {
+                            float: right;
+                            margin-right: 10%;
+                            color: lighten($dark, 15%);
+                            font-style: italic;
                         }
                     }
                 }
