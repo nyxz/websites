@@ -265,7 +265,6 @@ $icon-font-path: '../fonts/';
                 & .royalshine-carousel-item {
                     min-height: 250px;
                     & .royalshine-carousel-caption {
-                        width: 600px;
                         color: $dark;
                         text-shadow: none;
 
@@ -273,7 +272,7 @@ $icon-font-path: '../fonts/';
                             border-radius: 50%;
                             width: 100px;
                             height: 90px;
-                            margin-right: 50px;
+                            margin: 0px 20px;
                         }
                     }
                 }
@@ -284,8 +283,9 @@ $icon-font-path: '../fonts/';
         background-color: darken($dark, 35%);
         color: $light;
         min-height: 70px;
+        text-align: center;
         & .container {
-            padding-top: 20px;
+            padding: 20px 0px;
             & .royalshine-footer {
                 a {
                     color: $light;
