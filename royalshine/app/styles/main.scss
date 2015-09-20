@@ -179,7 +179,6 @@ $icon-font-path: '../fonts/';
     & .why-section {
         background-color: $main-color-7;
         background-position: 30%;
-        min-height: 400px;
         color: $light;
 
         & .container {
@@ -243,9 +242,6 @@ $icon-font-path: '../fonts/';
                 }
             }
             & .box-info {
-                ul {
-                    list-style-type: none;
-                }
                 color: $dark;
             }
         }
