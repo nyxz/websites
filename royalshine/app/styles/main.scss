@@ -80,7 +80,6 @@ $icon-font-path: '../fonts/';
 }
 
 .royal-shine {
-
     & .icon-wrapper {
         border: 4px solid $light;
         display: inline-block;
@@ -105,6 +104,9 @@ $icon-font-path: '../fonts/';
         background-size: contain;
         background-color: $light;
         background-position: center;
+        @media (max-width: 767px) {
+            background-size: cover;
+        }
 
         & .logo {
             background: url('../images/logo.png') no-repeat;
@@ -116,36 +118,30 @@ $icon-font-path: '../fonts/';
         & .container {
             padding-top: 20px;
             & .jumbotron {
+                margin-top: 100px;
                 p {
                     font-size: 20pt;
                 }
-                & .landing-buttons {
-                    margin-top: 150px;
-                    text-align: left;
-                    & .btn {
-                        color: $light;
-                        text-shadow: none;
-                        &.btn-book {
-                            background: $btn-primary;
-                            border: 1px solid $btn-primary;
-                            &:hover, &:focus, &:active {
-                                color: $light;
-                                background: darken($btn-primary, 10%);
-                                border: 1px solid darken($btn-primary, 10%);
-                                border-color: $btn-primary;
-                                outline-color: lighten($btn-primary, 10%);
-                            }
-                        }
-                        &.btn-services {
-                            background: $btn-secondary;
-                            border: 1px solid $btn-secondary;
-                            &:hover, &:focus, &:active {
-                                color: $light;
-                                background: darken($btn-secondary, 10%);
-                                border: 1px solid darken($btn-secondary, 10%);
-                                border-color: $btn-secondary;
-                                outline-color: lighten($btn-secondary, 10%);
-                            }
+            }
+            & .landing-buttons {
+                text-align: right;
+                & .btn {
+                    color: $light;
+                    text-shadow: none;
+                    &.btn-book {
+                        -webkit-transition: all 0.4s ease;
+                        -moz-transition: all 0.4s ease;
+                        -ms-transition: all 0.4s ease;
+                        -o-transition: all 0.4s ease;
+                        transition: all 0.4s ease;
+                        background: $btn-primary;
+                        border: 1px solid $btn-primary;
+                        &:hover, &:focus, &:active {
+                            color: $light;
+                            background: darken($btn-primary, 10%);
+                            border: 1px solid darken($btn-primary, 10%);
+                            border-color: $btn-primary;
+                            outline-color: lighten($btn-primary, 10%);
                         }
                     }
                 }
@@ -157,6 +153,7 @@ $icon-font-path: '../fonts/';
         color: $dark;
         background-color: $main-color-5;
         padding-top: 50px;
+        padding-bottom: 50px;
         min-height: 280px;
         & .container {
             & .royalshine-info {
@@ -183,6 +180,7 @@ $icon-font-path: '../fonts/';
 
         & .container {
             padding-top: 40px;
+            padding-bottom: 40px;
             font-size: 14pt;
             ul {
                 li {
@@ -221,6 +219,9 @@ $icon-font-path: '../fonts/';
                 border-radius: 10px;
                 color: $light;
                 text-transform: uppercase;
+                @media (max-width: 767px) {
+                    margin-top: 30px;
+                }
                 h2 {
                     margin-top: 0;
                 }
@@ -232,19 +233,22 @@ $icon-font-path: '../fonts/';
                     }
                 }
                 &.box-home {
-                    background-image: url("../images/bucket.jpg");
+                    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3)), url("../images/bucket.jpg");
                 }
                 &.box-office {
-                    background-image: url("../images/gloves.jpg");
+                    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3)), url("../images/gloves.jpg");
                 }
                 &.box-one-off {
-                    background-image: url("../images/vacuumcleaner.jpg");
+                    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3)), url("../images/vacuumcleaner.jpg");
                 }
             }
             & .box-info {
                 color: $dark;
                 p {
                     text-align: center;
+                    @media (max-width: 767px) {
+                        text-align: left;
+                    }
                 }
             }
         }
